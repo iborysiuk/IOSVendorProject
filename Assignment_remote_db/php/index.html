@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Vendor - Test page</title>
+        <style type="text/css">
+			.new-form {
+				padding: 10px;
+				margin: 5px;
+				width: 200px;
+				border: 1px solid black;
+				text-align: center;
+				background-color: #ffcc66;
+				display: block;
+			}
+			
+			input, select {
+				text-align: left;
+				height: 25px;
+				margin-bottom: 5px;
+			}
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div id='register' class='new-form'>
+                <form name="registration-form" action="main.php" method="post">
+                    <select name="tag">
+                        <option value="register">register</option>
+                    </select>
+                    <input name="name" type="text" placeholder="username" autocomplete="off"/>
+                    <input name="email" type="email" placeholder="example@example.com" autocomplete="off" />
+                    <input name="password" type="password" placeholder="password" autocomplete="off"/>
+                    <input name="register" type="submit" value="Register" />
+                </form>
+            </div>
+            <div id='login' class='new-form'>
+                <form name='login-form' action="main.php" method="post">
+                    <select name="tag">
+                        <option value="login">login</option>
+                    </select>
+                    <input name="email" type="text" placeholder="example@example.com" autocomplete="off" />
+                    <input name="password" type="password" placeholder="password" autocomplete="off" />
+                    <input name="login" type="submit" value="Login" />
+                </form>
+            </div>
+            <div id="add" class='new-form'>
+                <form name='add-form' action="main.php" method="post">
+                    <select name="tag">
+                        <option value="add">add</option>
+                    </select>
+                    <input name="name" type="text" placeholder="name" autocomplete="off" />
+                    <input name="email" type="email" placeholder="example@example.com" autocomplete="off" />
+                    <input name="phonenumber" type="tel" placeholder="+1 (XXX)-XXX-XX-XX" autocomplete="off" />
+                    <input name="country" type="text" placeholder="country" autocomplete="off" />
+                    <input name="city" type="text" placeholder="city" autocomplete="off" />
+                    <input name="address" type="text" placeholder="address" autocomplete="off" />
+                    <input name="postalcode" type="text" placeholder="postalcode" autocomplete="off" />
+                    <input name="imgLink" type="text" placeholder="link for image" autocomplete="off" />
+                    <input name="Add" type="submit" value="Add" />
+                </form>
+            </div>
+            <div id="getVendor" class="new-form">
+                <form name="getvendor-form" action="main.php" method="post">
+                    <select name="tag">
+                        <option value="vendor">vendor</option>
+                    </select>
+                    <input name="get" type="submit" value="Get Vendors" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
